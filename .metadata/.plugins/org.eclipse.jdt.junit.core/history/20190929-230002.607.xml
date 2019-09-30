@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Testrunner" project="JAVA PROJECT" tests="3" started="3" failures="0" errors="0" ignored="3">
+  <testsuite name="com.stepDefintion.Testrunner" time="0.001">
+    <testsuite name="Feature: Orangehrm Application LoginTest" time="0.001">
+      <testsuite name="Scenario: Validating Login Functionality" time="0.001" incomplete="true">
+        <skipped/>
+        <testcase name="Given Open chrome browser and naviagte to orangehrm Application" classname="Scenario: Validating Login Functionality" time="0.001" ignored="true"/>
+        <testcase name="When user enters &quot;username&quot; and &quot;password&quot; and click on login button" classname="Scenario: Validating Login Functionality" time="0.0" ignored="true"/>
+        <testcase name="Then user should be able to successfully close the application" classname="Scenario: Validating Login Functionality" time="0.0" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

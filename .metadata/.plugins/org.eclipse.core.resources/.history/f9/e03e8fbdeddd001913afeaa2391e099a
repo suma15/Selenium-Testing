@@ -1,0 +1,41 @@
+package com.newtourstest;
+
+import org.testng.annotations.Test;
+import org.openqa.selenium.support.PageFactory;
+
+import com.BaseTest.BaseTest;
+import com.NewToursWebpages.Loginpages;
+
+public class	LoginpageTest extends  BaseTest{
+	   Loginpages loginpage = null;
+	
+		@Test(priority = 1)
+	public void signontest()
+	{
+		
+	    loginpage = PageFactory.initElements(driver, Loginpages.class);//initElements(driver, loginpage.class);
+		loginpage.signon();
+		
+	}
+	
+		
+		@Test(priority =2)
+	public void yourdestination() {
+		
+			loginpage = PageFactory.initElements(driver, Loginpages.class);
+		
+			loginpage.yourdestion();
+			System.out.println(driver.getTitle());
+			System.out.println(driver.getCurrentUrl());
+		
+	}
+@Test(priority = 3)
+
+
+public void LoinTest()
+{
+	loginpage = PageFactory.initElements(driver, Loginpages.class);
+	loginpage.login("tutorial","tutorial");
+	
+}
+}

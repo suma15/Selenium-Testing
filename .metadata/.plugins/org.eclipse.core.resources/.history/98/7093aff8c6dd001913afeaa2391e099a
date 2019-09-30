@@ -1,0 +1,19 @@
+package com.newtourstestcases;
+
+import org.junit.Test;
+
+import com.NewToursWebpages.Loginpages;
+
+public class LoginpageTest extends Loginpages {
+	
+	@Test  (priority=1)
+	public void signontest()
+	{
+		
+		
+		Loginpages loginpage = new Loginpages();
+		loginpage.signon();
+		
+	}
+
+}

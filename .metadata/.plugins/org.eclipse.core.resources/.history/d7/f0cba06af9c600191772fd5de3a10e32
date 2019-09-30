@@ -1,0 +1,90 @@
+package com.BasicJava;
+
+public class Stringcomparision {
+	
+	public static void main (String[] args)
+	{
+	
+	String string1 = "LiveTech";
+	String string2 = "Livetech";
+	
+	if(string1.equals(string2))
+	{
+		System.out.println("Both the strings are equal");
+	}
+	else
+	{
+		System.out.println("Both the strings are not equal");
+	}
+	
+    System.out.println("========================="); 
+	
+	String string3 = "LiveTech";
+	String string4 ="LiveTech";
+	
+	if(string3.equalIgnorecase(string4))
+	{
+		System.out.println("both the strings are equal");
+	}
+	
+	else
+	{
+		System.out.println("both the strings are not equal");
+	}
+
+    System.out.println("========================="); 
+    String string5 ="LiveTech ";
+    String string6 ="Livetech";
+    
+    if(string5.equalsignorecase(string6))
+    {
+    	System.out.println("both the strings are equal");
+    }
+    else
+    {
+
+		System.out.println("both the strings are not equal");
+    }
+ 
+    String string7 ="LiveTech ";
+    String string8 =" Tech ";
+    
+    
+    if( string7.contains(string8))
+    {
+    	
+    	System.out.println("string existing");
+    }
+    else
+    {
+    	System.out.println("string not found");
+    
+    	
+    }
+    
+    System.out.println("========================="); 
+    
+    String string9 = " selenium ";
+    int StringLength = string9.length();
+    System.out.println("the total numner of characters of the string is :"+ StringLength);
+   
+    System.out.println("@@@@@@@@@@@@@@@@@@@@@@@");
+    String string10 = "LiveTech " ;
+    String string11 ="Tech ";
+    int string10length = string10.length();
+    int string11length = string11.length();
+    
+    //Comparision with respect to total number of characters of  each string
+    
+    if(string10length>string11length)
+    {
+    System.out.println("string10 is greter than string11");	
+    }
+    
+    else
+    {
+    	System.out.println("string11 is greater than string10");
+    }
+    
+    }
+}
